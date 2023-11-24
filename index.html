@@ -1,151 +1,427 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
-
   <head>
     <head>
-      <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-      <h2>Student URN: 6795405</h2>
-
-    <h2 style="font-family:calibri;"><b>Conference Paper: Bridge Deck Repairs</b></h2>
-
-    <!style for table>
+    <img src="WebBanner2023.png" alt= "Banner" width= "1200" height= "300">
+    <h1 style = color:#080891><b>ENG0018 Computer Laboratory 2023/24</b></h1>
+    <h2 style = color:#080891>Student URN: 6795405</h2>
+    <h2 style = color:#080891><b>Conference Project: Quantum Radars</b></h2>
+      <!style for tables>
       <style>
         table{
-          font-family: Arial, sans-serif;
-          border-collapse:collapse;
+          font-family: Ariel, sans-serif;
+          border-collapse: collapse;
+          margin: auto;
           width: 30%;
         }
-        
-      td, th{
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-
+        td, th{
+          border: 1px solid #dddddd;
+          text-align:center;
+          padding: 8px;
+        }
         tr:nth-child(even){
           background-color: #dddddd;
         }
+        tbody tr:hover{
+          background-color: #80ff80;
+          color: #080891;
+        }
       </style>
-    <style>
-  p.ex1{
-      margin-left: 250px;
-  }
-  </style>
-    </head>
-    <meta name="viewport" content="width=device-width, initial-scale=2">
-    <link real="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {display:none;}
-      <body style="background-color:#FFFFFF;margin-left:50px;">
-    </style>
-    <!table of content>
-    <table>
-    <tr>
+      <style>
+      .ex1{
+        width:70%;
+        margin:auto;
+        text-align:justify;
+        text-justify:inter-word;
+        font-size: 18px;
+        line-height: 1.7;
+        font-family: Times New Roman, serif;
+      }
+      .ex2{
+        margin:auto;
+        text-align:justify;
+        text-justify:inter-word;
+        white-space:nowrap;
+        font-size: 22px;
+      }
+      .ex3{
+        margin:auto;
+        text-align:justify;
+        text-justify:inter-word;
+        white-space:nowrap;
+        font-size: 22px;
+      }
+      .ex4{
+        margin:auto;
+        text-align:justify;
+        text-justify:inter-word;
+        white-space:nowrap;
+        font-size: 22px;
+      }
+      </style>
+        </head>
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <link real="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+          .mySlides {display:none;}
+          <body style="background-color:#FFFFFF;margin-left:50px;">
+        </style>
+      <table>
+      <tr>
       <th><h3>Table of Contents</h3></th>
-    </tr>
-    <tr>
-      <td><a href="#Abstract">Abstract</td>
-    </tr>
-    <tr>
-      <td><a href="#Introduction">Introduction</td>
-    </tr>
-    <tr>
-      <td><a href="#Analysis and discussion">Analysis and discussion</td>
-    </tr>
-    <tr>
-      <td><a href="#References">References</td>
-    </tr>
-    </table>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Abstract'>Abstract</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Introduction'>Introduction</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#History'>History</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Limitations of classical radars'>Limitations of Classical Radars</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Next step in radar technologies'>Next step in radar technologies</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Un-entangled single photon radar'>Un-entangled single photon radar</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Entangled-Photon Quantum Radar'>Entangled-Photon Quantum Radar</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Challenges'>Challenges</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Conclusion'>Conclusion</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#Abbreviations'>Abbreviations</td>
+      </tr>
+      <tr>
+      <td><a style="text-decoration:none" href = '#References'>References</td>
+      </tr>
+      </table>
+
+    <br>
+      <h3 id="Abstract", class = "ex2"><center>Abstract</center></h3>
+    <br>
+      <p class = "ex1">
+        This Article presents the description of Quantum radar technology, which is based on the 
+      consideration of the principle of Quantum Entanglement. The development of Quantum radar 
+      system can be important in many avenues of civil and military environments, as it can 
+      obtain information about an object at the distance using a cluster of entangled photons 
+      to produce a high-resolution image of that object. Nevertheless, a brief history and 
+      current limitations of classical radars were outlined to demonstrate the advantages of 
+      Quantum radar system over its counterpart. As well as the advantages, technical 
+      difficulties and engineering challenges were mentioned to indicate that it is not the 
+      easiest task to complete, as establishment of complementary systems is necessary to make 
+      a Quantum radar work.
+      </p>
+
+     <br>
+    <h3 id="Introduction", class = "ex2"><center>Introduction</center></h3>
+    <br>
+    <p class = "ex1">
+      Quantum Radar is a subset of Quantum Sensing Technology, which itself can be used in a wide 
+      variety of detecting and scanning systems (<a style="text-decoration:none", href ="#3"<cite>future.weapons,2021</cite></a>). When QS applied to radars, it significantly 
+      improves its detecting, identification and reconnaissance capabilities (<a style="text-decoration:none"href ="#3"><cite>future.weapons,2021</cite></a>). Interest in 
+      Quantum Radars has risen from investors and government since 2020 when early results demonstrated 
+      an advantage of the QR over its counterpart (see Figure 1:<a style="text-decoration:none" href= "#7"><cite>MckinseyDigital</cite></a>).
+    </p>
 
 
-    <h3 id="Abstract">Abstract</h3>
-    <pre>
-      <h2 style="font-family:Simplex:">
-        This paper presents a novel adaptive active learning strategy. The most accurate 
-      classification model from a heterogeneous classifier pool is selected at each learning 
-      epoch. Our goal is to achieve greater incremental improvement in accuracy, compared to 
-      using a single type of classification model throughout the process. The strategy is 
-      evaluated on benchmark data sets. We further consider an application to texture 
-      classification problems in sonar mosaic imagery and compare it with nonadaptive active 
-      learning and traditional machine learning approaches. Our results show that…We conclude 
-      that…
+      <br>
+      <head>
+      <title>Quantum radars</title>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      </head>
+      <body>
+        <!--Create a div element to hold the chart-->
+            <div id="chart_div"  style="width: 1400px; height: 600px; margin:auto;"></div>
+
+
+        <script>
+            // Load the corechart package and set the call back function
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+
+          // Callback function to draw the verticak bar chart
+          function drawChart(){
+              //Create a DataTable with colums for city and population 
+              var data = new google.visualization.DataTable();
+              data.addColumn('string', 'City');
+              data.addColumn('number', 'Population');
+              //Add data for each city 
+              data.addRows([
+                  ['2002', 0],
+                  ['2003', 0],
+                  ['2004', 50],
+                  ['2005', 10],
+                  ['2006', 0],
+                  ['2007', 5], 
+                  ['2008', 10],
+                  ['2009', 15],
+                  ['2010', 0],
+                  ['2011', 7],
+                  ['2012', 70],
+                  ['2013', 35],
+                  ['2014', 135],
+                  ['2015', 135],
+                  ['2016', 180],
+                  ['2017', 370],
+                  ['2018', 240],
+                  ['2019', 220],
+                  ['2020', 750],
+                  ['2021', 2330],
+                  ['2022', 2350]
+              ]);
+              var options = {
+                  title:'Investement in Quantum Technologies',                   
+                  hAxis: {title: 'Years'},//X-axis label
+                  vAxis: {title: 'Money Invested (in Millions)'}, //Y-axis label
+                  bars: 'vertical', //Display bars vertically
+                  legend : "none"//No legend
+              };
+              var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+             }
+          </script>
+        <p style="margin:0px;"><center>Figure 1 shows the amount of money invested into Quantum Technologies in millions of dollars over the past 20 years based on the data from <a style="text-decoration:none" href= "#7"><cite>MckinseyDigital</cite></a></center></p>
+      </body>
+
+      <br>
+      <h3 id="History", class = "ex2"><center>History</center></h3>
+    <br>
+      <p class = "ex1">
+      Originally, the first radar as we all know it today had been invented by the British Physicist 
+      Robert Watson Watt in 1930(<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). The British Air Ministry asked him to 
+      explore the nature of radio waves and how they can be weaponised against enemy bombers (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). 
+      While doing his studies he managed to find out that radio waves used by the BBC broadcasting 
+      were reflected from a metal plate (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). Hence, he discovered that the reflected signal 
+      can be used for identification and detection of the incoming enemy planes (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). 
+      Straight after that the system of such radio emitting stations was created in the east 
+      and south coast of Britain (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). The maximum range of one radio emitting station 
+      at that time was around 190km (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>).
+      </p>
+
+       <br>        
+      <h3 id="Limitations of Classical Radars", class = "ex4"><center>Limitations of Classical Radars</center></h3>
+    <br>
+      <p class = "ex1">
+      Since the days of Robert Watson many years have passed, and the radars have been modernised 
+      and equipped with much more advanced sensors, which allowed to increase the range of radar 
+      to approximately 400 miles (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). However, till this  day their detecting 
+      capabilities are still limited (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). One of the limitations is the inability 
+      to detect stealth aircrafts (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). To avoid radar detection, they are covered 
+      in special coating, which allows to absorb electromagnetic radiation rather than reflect it (<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>). 
+      Even then, any detection would not tell you it’s exact location and altitude(<a style="text-decoration:none" href ="#3"><cite>future.weapons,2021</cite></a>).
+      </p>
+
+    <br>
+      <h3 id="Next step in radar technologies", class = "ex4"><center>Next step in radar technologies</center></h3>
+    <br>
+      <p class = "ex1">
+      The further evolution in radar technologies can overcome the limitations of classical radars 
+      by replacing the use of EM waves with quantum states of photons (<a style="text-decoration:none" href = "#8"<cite>MIT Technology Review, 2019</cite></a>). 
+      The radars, which are using this principle called quantum radars. QR will be able to detect and 
+      identify altitude, geolocation and provide a detailed image even of a stealth aircraft, while remaining 
+      completely untraceable for modern radio detecting systems, as photons are used instead of waves(<a style="text-decoration:none" href = "#4"><cite>IEEEXplore, 2017</cite></a>). 
+      There are two major types of QR are highlighted (<a style="text-decoration:none" href = "#6"><cite>Mathewes, M. 2010</cite></a>): 1.Un-entangled single photon radar 2.	Entangled-Photon Quantum Radar
+      </p>
+
+      <br>
+      <h3 id="Un-entangled single photon radar", class = "ex3"><center>Un-entangled single photon radar</center></h3>
+        <br>
+      <p class = "ex1">
+      Single – Photon QR in nature is very similar to a classical radar (<a style="text-decoration:none" href = "#5"><cite>Irving, M. 2020</cite></a>). 
+      The transmitter generates a single photon that is fired toward the target and then the quantum 
+      receiver tries to collect the reflected photon (<a style="text-decoration:none" href = "#5"><cite>Irving, M. 2020</cite></a>). 
+      </p>
+
         
-      </h2>
+       <br>
+      <h3 id="Entangled-Photon Quantum Radar", class = "ex3"><center>Entangled-Photon Quantum Radar</center></h3>
+    <br>
+      <p class = "ex1">
+        Entangled-Photon QR uses the principle of Quantum Entanglement (<a style="text-decoration:none" href = "#6"><cite>Mathewes, M. 2010</cite></a>). The essence of 
+      the principle is that it is possible to link a pair of two particles regardless the distance  
+      between and form a quantum entanglement pair (<a style="text-decoration:none" href = "#5"><cite>Irving, M. 2020</cite></a>; <a style="text-decoration:none" href = "#8"<cite>MIT Technology Review, 2019</cite></a>). 
+      The production of entangled photons relies on laws of conservation of momentum and energy (<a style="text-decoration:none" href = "#4"><cite>IEEEXplore, 2017</cite></a>). 
+      Non-linear crystal is used to split photon beams into pairs of photons that have combined energy and momentum of 
+      the original photon and crystal lattice (<a style="text-decoration:none" href = "#4"><cite>IEEEXplore, 2017</cite></a>). One of the particles is fired 
+      at the target, while the second one is stored in the quantum memory of the computer (<a style="text-decoration:none" href = "#1"><cite>Mathewes, M. 2010</cite></a>). 
+      The connection between the particles is so strong that when changes happen to one of the particles 
+      the results can also be seen on the other particle (<a style="text-decoration:none" href = "#1"><cite>Assouly; Dassonneville;Peronnin; Bienfait; Huard, 2023</cite></a>). 
+      This is called the principle of Quantum entanglement or ‘Spooky action at the distance’ (<a style="text-decoration:none" href = "#5"><cite>Irving, M. 2020</cite></a>). 
+      The reflected particle is than collected by the quantum receiver and combined with the stored particle and 
+      if the object is detected then the transmitter starts producing more photons to create a detailed 
+      image of an aircraft (<a style="text-decoration:none" href="#4"><cite>IEEEXplore, 2017</cite></a>; <a style="text-decoration:none" href = "#8"<cite>MIT Technology Review, 2019</cite></a>). If an aircraft is not identified, then the fired 
+      particle will be lost in the noisy environment (<a style="text-decoration:none" href="#4"><cite>IEEEXplore, 2017</cite></a>).
+      </p>
+
       
-    </pre>
-    <h3 id="Introduction">Introduction</h3> 
-      <pre>
-        <h2 style="font-family:Simplex:">
-           Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is 
-      learnt by an intelligent machine through the interaction of an oracle with the machine 
-      system, over a sequence of learning epochs. A distinctive component in an active system 
-      is the querying strategy, used to sample candidate training instances from a pool and 
-      evaluate them for informativeness, i.e., their potential to improve the classification 
-      model. Various strategies have been proposed including; Query by Committee (Seung et      
-      al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty sampling (Lewis and 
-      Gale, 1994) and version space reduction (margin sampling) (Tong and Koller, 2001). 
-      Irrespective of how the most informative pattern instances are chosen at each epoch they are 
-      presented for labeling, to a machine (database) or human oracle that has knowledge of the 
-      class labels. After adding the newly labeled instances to the current training set, a revised 
-      model is subsequently induced. A goal of this process is to achieve an efficient, incremental 
-      advancement of learning at each epoch. The process is continued until some stopping criterion 
-      has been met, such as reaching a stage where information from the selected instances is 
-      contrary to the model, causing the classifier confidence to drop, as in Vlachos (2008). 
-          
-        </h2>
-    </pre>
+      <br>
+      <h3 id="Challenges", class = "ex2"><center>Challenges</center></h3>
+    <br>
+      <p class = "ex1">
+      However, to create such a technically complicated detection system a few challenges must be 
+      resolved. The main problem is the storage of second particle, while the first one is 
+      completing its journey towards the object and back to the receiver (<a style="text-decoration:none" href = "#4"><cite>IEEEXplore, 2017</cite></a>). 
+      So, one of the options to deal with it is to design and create a quantum memory, which might be 
+      not one of the easiest tasks to complete in terms of engineering (<a style="text-decoration:none" href = "#6"><cite>Mathewes, M. 2010</cite></a>). 
+      Additionally, Quantum Memory won’t work just by itself, hence additional infrastructure such 
+      as Quantum computing system should be established (<a style="text-decoration:none" href = "#1"><cite>Assouly; Dassonneville; Peronnin; Bienfait; Huard, 2023</cite></a>). 
+      </p>
+    <br>
 
-    <h3 id="Analysis and discussion">Analysis and decision</h3>
-    Table: Data on cost and lifespan on bridge repairs
-    <table>
-      <tr>
-        <th>Cost of Repairs</th>
-        <th>Lifespan of repairs(yeras)</th>
-      </tr>
-      <tr>
-        <td>0.7m</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>3.3m</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2.6m</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>17.4m</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>8.8m</td>
-        <td>9</td>
-      </tr>
-    </table>
+      <h3 id="Conclusion", class = "ex2"><center>Conclusion</center></h3>
+    <br>
+      <p class = "ex1">
+      Overall, Quantum radar is a very promising technology, which will have an immensely powerful 
+      impact on civil and military environments (<a style="text-decoration:none" href = "#6"><cite>Mathewes, M. 2010</cite></a>). Currently it is not as 
+      advanced as Quantum Communications or Quantum Cryptography, but it is not as complicated as 
+      Quantum Computers and Computing Systems (<a style="text-decoration:none" href = "#6"><cite>Mathewes, M. 2010</cite></a>). However, the realisation 
+      of this technology in real life might happen in the nearest future. In July of 2023 group of 
+      French researchers at Ecole Normale Supérieure de Lyon was able to develop a prototype of a 
+      quantum radar that can outperform classical radar by 20% (<a style="text-decoration:none" href = "#2"><cite>Fadeli, 2023</cite></a>). Benjamin Huard, who was part of 
+      the research team, stated that the idea of applying QS to radars was born in 2020 after they 
+      had invented an Entangled particles generator: ‘We invented a superconducting circuit in 2020 
+      that  was able, among other things, to generate entanglement, store and manipulate microwave 
+      quantum states…. demonstrating a quantum advantage in radar sensing.’ (<a style="text-decoration:none" href = "#2"><cite>Fadeli, 2023</cite></a>)
+      </p>
 
-    <h3 id="References">References</h3>
-  <p>
-  <pre>
-    <h2 style="font-family:simplex:">
-       Anglutin, d (1988), Queries and concept learning. Machlie learning 2, (4), 319-342.
+      <br>
 
-    Brinker, K (2003),  Incorporating Diversity in Active Learning with Support Vector Machines, 
-    Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003)
+        <h3 id="Abbreviations", class = "ex2"><center>Abbreviations</center></h3>
+    <br>
+        <p class = "ex1">
+      QR - Quantum radar QS - Quantum Sensing 
+      </p>
 
-    Bruzzone, L, Chi, M and Marconcini, M (2006), A novel treansductive SVM for semisupervised 
-    classificationof remote - sensing images, IEEE Transactions on Geoscience and Remote Sensing, 
-    44, (11), 3363
+      <br>
 
-    Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing 
-    images. In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009,3.
+      <h3 id="References", class = "ex2"><center>References</center></h3>
+    <br>
+      <p class = "ex1">
+      <h3 id = "1"></h3>
+      <center>Assouly; Dassonneville; Peronnin; Bienfait; Huard (2023) ‘Quantum advantage in microwave quantum radar’. 
+      Available at: <a style="text-decoration:none" href="https://www.nature.com/articles/s41598-021-01122-8">https://www.nature.com/articles/s41598-021-01122-8</a>
+      <br>(Accessed: 20 October 2023)</center>
 
-    Campbell, C, Cristianini, Nand Smola, A (2000), Query learning with large margin classifiers.
-    In: Proc. 17th Internet. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA, 111-118
-    </h2>
-  </pre>
-  </p>
+      <h3 id = "2"></h3>
+      <center>Fadelli, I. (2023) ‘A quantum radar that outperforms classical radar by 20%’. 
+      Available at: <a style="text-decoration:none" href="https://phys.org/news/2023-07-quantum-radar-outperforms-classical.html">https://phys.org/news/2023-07-quantum-radar-outperforms-classical.html</a>
+      <br>(Accessed: 23 October 2023)</center>
+
+      <h3 id="3"></h3>
+      <center>future.weapons (2021) ‘Stealth Technology: How radar Works’. 
+      Available at: <a style="text-decoration:none" href="https://www.instagram.com/future.weapons/?hl=en">Military Engineering & Technology (@future.weapons) • Instagram photos and videos</a>
+     <br> (Accessed: 17 October 2023)</center>
+
+      <h3 id ="4"></h3>
+      <center>IEEEXplore (2017) ‘The Performance Analysis of Quantum Illumination Radar’. 
+      Available at: <a style="text-decoration:none" href = "https://ieeexplore.ieee.org/document/7945964">https://ieeexplore.ieee.org/document/7945964</a><br>(Accessed: 23 October 2023)</center>
+
+      <h3 id = "5"></h3>
+      <center>Irving, M. (2020) ‘“Quantum radar” uses entangled photons to detect objects’ 
+      Available at: <a style="text-decoration:none" href="https://newatlas.com/physics/quantum-radar-entangled-photons/">https://newatlas.com/physics/quantum-radar-entangled-photons/</a>     
+      <br>(Accessed: 19 October 2023)</center>
+
+      <h3 id = "6"></h3>
+      <center>Mathews, M. (2010) ‘A Study on Quantum Radar Technology Developments and Design Consideration for 
+      its integration’. Available at: <a style="text-decoration:none" href="https://arxiv.org/pdf/2205.14000.pdf#:~:text=In%20an%20interferometric%20quantum%20radar,is%20eceived%20by%20the%20radar">2205.14000.pdf (arxiv.org)</a> <br>(Accessed: 20 October 2023).</center>
+
+        <h3  id="7"></h3>
+        <center>McKinsey Digital (2023) ‘Quantum technology sees record investments, progress on talent gap’. 
+        Available at: <a style="text-decoration:none" href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-technology-sees-record-investments-progress-on-talent gap">www.mckinsey.com/capabilities/mckinsey-digital/our-insights/quantum-technology-sees-record-investments-progress-on-talent-gap</a> 
+        <br>(Accessed: 24 October, 2023)</center>
+<br>
+      <h3 id = "8"></h3>
+      <center>MIT Technology Review (2019) ‘Quantum Radar has been demonstrated for the first time’. 
+      Available at: <a style="text-decoration:none" href="https://www.technologyreview.com/2019/08/23/75512/quantum-radar-has-been-demonstrated-for-the-first-time/">Quantum radar has been demonstrated for the first time | MIT Technology Review</a>
+      <br>(Accessed: 19 October 2023)</center>
+
+
+
+
+        <h2>Conference Presentation: Quantum Radars</h2>
+        <script>
+          // Array of slide image URLs
+          var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"];
+          var currentSlide = 0;
+          function showSlide(){
+            document.getElementById('slide').src = slideImages[currentSlide];
+          }
+          function nextSlide(){
+            currentSlide = (currentSlide + 1) % slideImages.length;
+            showSlide();
+          }
+          function prevSlide(){
+            currentSlide  = (currentSlide - 1 + slideImages.length) % slideImages.length;
+            showSlide();
+          }
+          //Function to show a specific slide based on the button clicked
+          function showSlideNumber(slideNimber){
+            currentSlide = slideNumber - 1;
+            showSlide();
+          }
+          // Call showSlide() to display the first slide
+          showSlide();
+        </script>
+        <div id="slide-container">
+          <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
+          <!--Previous and Next buttons container-->
+          <div class="button-container">
+            <button class = "button" onclick="prevSlide()">Previous</button>
+            <button class = "button" onclick="nextSlide()">Next</button>
+          </div>
+            <!--Slide number buttons conatiner-->
+          <div class="slide-number-container">
+            <button class="button" onclick="showSlideNumber(1)">1</button>
+            <button class="button" onclick="showSlideNumber(2)">2</button>
+            <button class="button" onclick="showSlideNumber(3)">3</button>
+            <button class="button" onclick="showSlideNumber(4)">4</button>
+          </div>
+            <style>
+              /* Style to center the image */
+              #slide-container{
+                text-align: center;
+                position: relative;
+              }
+              /* Style for the buttons */
+              .button-container{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: -100px;/* Add some margin between the image and the buttons  */
+              }
+              .slide-number-container{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: -50px;/* Add some margin between the slide number buttons and the image  */
+              }
+              .button{
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin: 0 5px;
+                font-size: 16px;
+                border-radius: 5px;
+              }
+            </style>
+
+
+        
 </html>
 
     
